@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moana Life - Ürün Kataloğu</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            scroll-behavior: smooth;
+        }
+        .catalog-container {
+            scroll-snap-type: y mandatory;
+            overflow-y: scroll;
+            height: 100vh;
+        }
+        .catalog-page {
+            scroll-snap-align: start;
+            flex-shrink: 0;
+            height: 100vh;
+            width: 100%;
+        }
+        .gradient-overlay {
+            background: linear-gradient(to top, rgba(0,0,0,0.7), rgba(0,0,0,0));
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+
+    <div class="catalog-container">
+
+        <!-- Sayfa 1: Kapak & Ürün Tanıtımı -->
+        <!-- Bu bölüm için görseli 'kapak.jpeg' olarak kaydedin -->
+        <section id="page1" class="catalog-page relative flex items-center justify-center bg-cover bg-center" style="background-image: url('kapak.jpeg');">
+            <div class="absolute inset-0 bg-black bg-opacity-30"></div>
+            <div class="relative text-center text-white p-8">
+                <h1 class="text-5xl md:text-7xl font-bold mb-4 drop-shadow-lg">MOANA LIFE</h1>
+                <p class="text-xl md:text-2xl font-light drop-shadow-md">Ananas & Moringa Şurubu ile Doğal Denge</p>
+                 <div class="mt-8">
+                    <a href="#page2" class="text-white animate-bounce">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 mx-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sayfa 2: Sindirim Sistemi -->
+        <section id="page2" class="catalog-page flex flex-col md:flex-row items-center justify-center bg-emerald-50">
+            <div class="w-full md:w-1/2 h-1/2 md:h-full">
+                <!-- Bu bölüm için görseli 'urun-faydalar.png' olarak kaydedin -->
+                <img src="urun-faydalar.png" alt="Sindirim sistemini düzenleyen görsel" class="object-cover w-full h-full">
+            </div>
+            <div class="w-full md:w-1/2 p-8 md:p-16 text-center md:text-left">
+                <h2 class="text-4xl md:text-5xl font-bold text-emerald-800 mb-4">Sağlıklı Bir Başlangıç</h2>
+                <p class="text-lg text-emerald-700">
+                    Doğal bromelain kaynağı ananas ve moringa'nın gücüyle sindirim sisteminizi düzenleyin. Daha hafif ve konforlu hissedin.
+                </p>
+            </div>
+        </section>
+
+        <!-- Sayfa 3: Ödem ve Şişkinlik -->
+        <section id="page3" class="catalog-page flex flex-col-reverse md:flex-row items-center justify-center bg-sky-50">
+            <div class="w-full md:w-1/2 p-8 md:p-16 text-center md:text-left">
+                <h2 class="text-4xl md:text-5xl font-bold text-sky-800 mb-4">Hafifliği Hissedin</h2>
+                <p class="text-lg text-sky-700">
+                    Vücudunuzdaki fazla ödem ve rahatsız edici şikinlik hissine veda edin. Gün boyu enerjik ve zinde kalın.
+                </p>
+            </div>
+            <div class="w-full md:w-1/2 h-1/2 md:h-full">
+                <!-- Bu bölüm için görseli 'bromelain-etkileri.png' olarak kaydedin -->
+                <img src="bromelain-etkileri.png" alt="Ödem ve şişkinliği azaltan görsel" class="object-cover w-full h-full">
+            </div>
+        </section>
+
+        <!-- Sayfa 4: Anti-inflamatuar Destek -->
+        <section id="page4" class="catalog-page flex flex-col md:flex-row items-center justify-center bg-amber-50">
+            <div class="w-full md:w-1/2 h-1/2 md:h-full">
+                <!-- Bu bölüm için görseli 'anti-inflamatuar.png' olarak kaydedin -->
+                <img src="anti-inflamatuar.png" alt="Anti-inflamatuar destek görseli" class="object-cover w-full h-full">
+            </div>
+            <div class="w-full md:w-1/2 p-8 md:p-16 text-center md:text-left">
+                 <h2 class="text-4xl md:text-5xl font-bold text-amber-800 mb-4">Vücudunuzu Koruyun</h2>
+                <p class="text-lg text-amber-700">
+                    Ürünümüz, genel bir anti-inflamatuar destek sağlayarak vücudunuzun doğal savunma mekanizmalarına yardımcı olur.
+                </p>
+            </div>
+        </section>
+
+        <!-- Sayfa 5: Bağışıklık Sistemi -->
+        <section id="page5" class="catalog-page flex flex-col-reverse md:flex-row items-center justify-center bg-teal-50">
+            <div class="w-full md:w-1/2 p-8 md:p-16 text-center md:text-left">
+                <h2 class="text-4xl md:text-5xl font-bold text-teal-800 mb-4">Bağışıklık Kalkanı</h2>
+                <p class="text-lg text-teal-700">
+                    Ananas ve moringa'nın besleyici içeriği ile bağışıklık sisteminizi destekleyerek hastalıklara karşı daha dirençli olun.
+                </p>
+            </div>
+            <div class="w-full md:w-1/2 h-1/2 md:h-full">
+                 <!-- Bu bölüm için 'urun-faydalar1.png' görselini tekrar kullanabilirsiniz -->
+                 <img src="urun-faydalar1.png" alt="Bağışıklık sistemini destekleyen görsel" class="object-cover w-full h-full">
+            </div>
+        </section>
+
+    </div>
+</body>
+</html>
+
